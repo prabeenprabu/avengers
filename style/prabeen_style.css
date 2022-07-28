@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+:root{
+    --grey : #141414;
+    --lightwhite : #dbdbdb;
+    --blue : #87bdd8;
+
+}
 *{
     padding: 0;
     margin: 0;
@@ -9,13 +15,13 @@ body{
 #page{
     width: 75%;
     margin:0 auto;
-    background-color: #daebe8;
+    background-color: var(--lightwhite);
 }
 
 #header{
     width: 100%;
     height: 80px;
-    background-color: #87bdd8;
+    background-color: var(--grey);
     margin-top: 0px;
 }
 
@@ -31,7 +37,7 @@ body{
     height: 5vh;
     display: flex;
     justify-content: center;
-    background-color: #87bdd8;
+    background-color: var(--grey);
     clear: both;
 }
 
@@ -49,29 +55,29 @@ body{
     float: left;
     width: 25%;
     background: transparent;
+    text-align: center;
+    padding-top: 30px;
 }
 #lnav h2{
     padding: 10px 0;
     text-align: center;
+    color: white;
 }
 
 #rnav{
     width: 73.4%;
     float: right;
-    border-left-color: #87bdd8;
+    border-left-color: var(--grey);
     border-left-style: solid;
     border-left-width: 16px;
 }
 #rnav p{
     margin: 0 10px;
 }
-#lnav{
-    text-align: center;
-}
 #rnav h1{
         padding-left: 80px;
         font-size: 40px;
-        color: #71afce;
+        color: var(--grey);
 }
 
 #logo{
@@ -80,35 +86,30 @@ body{
     float: right;
     margin: 10px;
 }
-
 #aleft{
-    height: 620px;
+    height: auto;
     width: 320px;
     float: left;
     margin: 10px;
 }
-
 #aright{
-    height: 540px;
+    height: auto;
     width: 300px;
     float: right;
     margin: 10px;
 }
-
 #spider_left{
     width: 370px;
-    height: 400px;
+    height: auto;
     float: left;
     margin: 10px;
 }
-
 #spider_right{
     width: 300px;
-    height: 400px;
+    height: auto;
     float: right;
     margin: 10px;
 }
-
 #rnav p{
     color:black;
     font-size: 18px;
@@ -117,40 +118,34 @@ body{
     margin: 12px;
     text-indent: 40px;
 }
-
 #lnav h2 a{
     text-decoration: none;
-    color:#186f9b;
+    color: var(--grey);
+    padding: 7px 10px;
 }
 #lnav h2 a:hover{
     text-decoration: overline;
-    color:#a20606;
-}
-#lnav h2 a:active{
-    text-decoration: line-through;
-    color:indigo;
-}
-#lnav{
-    padding-top: 90px;
-    
+    color:var(--lightwhite);
+    background-color: var(--grey);
 }
 #rnav h3{
     margin: 20px;
+    text-align: center;
 }
 #rnav h3 a{
     text-decoration: none;
     padding: 10px;
-    color: lightseagreen;
+    color: var(--grey);
 }
 #rnav h3 a:hover{
     text-decoration: overline;
-    background-color: #a20606;
-    color: black;
+    background-color: var(--grey);
+    color: var(--lightwhite);
 }
 #thanoss{
-    height: 350px;
+    height: auto;
     width: 300px;
-    margin: 10px;
+    margin: 10px 0 0 30%;
 }
 #iron_right{
     width: 300px;
@@ -196,8 +191,10 @@ body{
         height: auto;
         padding: 0 0 0 10%;
     }
+    #thanoss{
+        margin: 10px 0 0 0;
+    }
     #mark{
         width: 100%;
-    }
-    
+    }    
 }
